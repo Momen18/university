@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ebf5ec; 
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  background-color: #007bff; 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f7f7f7; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 50px;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  background-color: #b9beba; /* لون خلفية الزر */
+  color: #9ac594;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #68c77d; /* لون الخلفية عند التمرير فوق الزر */
+}
+
+/* University List */
+.university-list {
+  margin-top: 20px;
+}
+
+.university-card {
+  background: #b6bec7; /* لون خلفية بطاقة الجامعة */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #b4acac;
+}
+
+.university-card h2 {
+  margin: 0 0 10px;
+  color: #007bff;
+}
+
+.university-card p {
+  margin: 5px 0;
+}
+
+.university-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.university-card a:hover {
+  text-decoration: underline;
+}
+
+/* Loading and Error */
+.loading {
+  text-align: center;
+  color: #007bff;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .university-card {
+    padding: 10px;
+  }
+}
